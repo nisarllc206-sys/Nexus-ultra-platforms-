@@ -1,4 +1,64 @@
-┌─────────────────────┐
+nexus-ultra-platforms/
+│
+├─ android-app/                   # Android app code (Material 3)
+│  ├─ app/
+│  ├─ build.gradle
+│  ├─ AndroidManifest.xml
+│  └─ res/
+│
+├─ web-app/                       # React/Next.js frontend
+│  ├─ public/
+│  ├─ src/
+│  │  ├─ components/
+│  │  ├─ pages/
+│  │  ├─ services/                # API calls
+│  │  └─ styles/
+│  ├─ package.json
+│  └─ next.config.js
+│
+├─ backend/                       # Node.js / Express backend
+│  ├─ src/
+│  │  ├─ controllers/
+│  │  ├─ routes/
+│  │  ├─ models/
+│  │  ├─ services/                # AI, PDF, OCR, Chatbot
+│  │  ├─ middleware/
+│  │  └─ utils/
+│  ├─ .env.example
+│  ├─ package.json
+│  └─ server.js
+│
+├─ ai-modules/                     # Optional standalone AI agents
+│  ├─ pdf-ocr/
+│  ├─ chatbot/
+│  └─ image-video-tools/
+│
+├─ docker/                         # Docker configs
+│  ├─ Dockerfile.backend
+│  ├─ Dockerfile.web
+│  └─ docker-compose.yml
+│
+├─ k8s/                            # Kubernetes deployment configs
+│  ├─ backend-deployment.yaml
+│  ├─ web-deployment.yaml
+│  └─ volumes.yaml
+│
+├─ scripts/                        # Automation scripts
+│  ├─ deploy.sh
+│  └─ migrate-db.sh
+│
+├─ marketing/                       # Ads, branding, landing pages
+│  ├─ logo-pack/
+│  ├─ social-ads/
+│  └─ landing-page/
+│
+├─ roadmap/                         # 3-year roadmap + pitch decks
+│  ├─ investor-deck.pptx
+│  └─ milestone-diagrams/
+│
+├─ README.md
+├─ LICENSE
+└─ .gitignore┌─────────────────────┐
                 │  Users (Web & App) │
                 └─────────┬──────────┘
                           │
