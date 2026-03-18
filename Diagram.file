@@ -1,0 +1,37 @@
+┌─────────────────────┐
+                │  Users (Web & App) │
+                └─────────┬──────────┘
+                          │
+          ┌───────────────┴───────────────┐
+          │        Frontend Layer         │
+          │ React / Next.js / Material3   │
+          │ Android App (Jetpack Compose)│
+          └───────────────┬──────────────┘
+                          │ REST / GraphQL / WebSocket
+          ┌───────────────┴───────────────┐
+          │       API / Backend Layer     │
+          │ Node.js + Express / NestJS    │
+          │ Supabase / Firebase Auth      │
+          │ AI Modules (OCR, Chatbot)    │
+          └───────────────┬───────────────┘
+                          │
+          ┌───────────────┴───────────────┐
+          │         Database Layer        │
+          │ MongoDB (NoSQL)               │
+          │ PostgreSQL (Relational)       │
+          │ Redis (Caching & Queues)      │
+          └───────────────┬───────────────┘
+                          │
+          ┌───────────────┴───────────────┐
+          │  AI & Automation Services     │
+          │ OpenAI / Custom AI Agents     │
+          │ PDF processing / OCR / NLP    │
+          └───────────────┬───────────────┘
+                          │
+          ┌───────────────┴───────────────┐
+          │ Deployment & DevOps Layer     │
+          │ Docker / Kubernetes           │
+          │ Vercel / Netlify (Web)        │
+          │ Fastlane (Play Store)         │
+          │ CI/CD (GitHub Actions)        │
+          └──────────────────────────────┘
