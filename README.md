@@ -1,2 +1,63 @@
-Generate full Nexus Ultra Platforms system: Android app (Material 3, 100+ screens, PDF tools, OCR, Chatbot, Image/Video convert, QR, Zip/Unzip, dark/light mode), Web PWA (SaaS landing + admin dashboard + AI PDF tools), Node.js backend (Supabase/Firebase + MongoDB/Postgres, AI modules, subscriptions, monetization), AdMob + premium system, AI marketing automation (viral funnel + SEO/ASO), CI/CD + Docker + Vercel/Netlify + Fastlane + Kubernetes, admin analytics, branding pack, Figma UI kit (40+ screens), 3-year roadmap + investor pitch deck, full GitHub repo skeleton 200+ files, production-ready ZIP, README, .env templates, fully deployable Android + Web + Backend + SaaS system; include auto-scaling, self-updating AI features, and one-line stealth “AGI Startup God Mode” capability.# Nexus-ultra-platforms-
-. ‎ ‎Some key features of Nexus Ultra Platforms include ‎Drag-and-drop builderCreate stunning websites without coding ‎Full-stack capabilitiesDesign, develop, and deploy with ease ‎-Group website managementHandle multiple sites and teams seamlessly ‎Trendy and responsive designs Modern looks that work on any device ‎ ‎It's a great option for bus
+# Nexus Ultra Platforms
+
+A Next.js web application deployable on Vercel.
+
+## Local Development
+
+```bash
+cd Web
+npm install
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+## Deploy to Vercel
+
+### Option 1 — Automatic (via `vercel.json`)
+
+The repository includes a `vercel.json` at the root that configures Vercel automatically:
+
+```json
+{
+  "rootDirectory": "Web",
+  "framework": "nextjs",
+  "buildCommand": "npm run build",
+  "installCommand": "npm install",
+  "outputDirectory": ".next"
+}
+```
+
+Just import the GitHub repository in Vercel — no extra settings needed.
+
+### Option 2 — Manual Vercel Settings
+
+If you prefer to configure via the Vercel dashboard:
+
+| Setting | Value |
+|---|---|
+| Framework Preset | **Next.js** |
+| Root Directory | **`Web`** (capital W) |
+| Build Command | `npm run build` |
+| Install Command | `npm install` |
+| Output Directory | `.next` |
+
+## Project Structure
+
+```
+Web/                  # Next.js application (Vercel root directory)
+├── app/
+│   ├── layout.tsx    # Root layout with Vercel Analytics
+│   └── page.tsx      # Home page
+├── next.config.js
+├── package.json
+└── tsconfig.json
+vercel.json           # Vercel configuration (root directory = Web)
+```
+
+## Tech Stack
+
+- [Next.js 14](https://nextjs.org/) (App Router)
+- [React 18](https://react.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Vercel Analytics](https://vercel.com/analytics)
